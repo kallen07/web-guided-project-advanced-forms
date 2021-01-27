@@ -83,6 +83,11 @@ export default function App() {
     yup
     .reach(schema, name)
     .validate(value)
+    .then(() => {
+      setFormErrors({
+        ...formErrors
+      })
+    })
 
 
     setFormValues({
