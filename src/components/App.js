@@ -65,7 +65,7 @@ export default function App() {
     //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
     //    and regardless of success or failure, the form should reset
     axios
-      .push("http://buddies.com/api/friends", newFriend)
+      .post("http://buddies.com/api/friends", newFriend)
       .then((res) => {
         setFriends([newFriend, ...friends]);
         setFormValues(initialFormValues);
