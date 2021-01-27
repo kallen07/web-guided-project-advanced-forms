@@ -6,7 +6,10 @@ export default yup.object().shape({
     email: yup.string(),
     role: yup.string(),
     civil: yup.string(),
-    hiking: yup.boolean
+    // we are done with checkboxes
+    hiking: yup.boolean(),
+    reading: yup.boolean(),
+    coding: yup.boolean(),
 })
 
 const formSchema = Yup.object().shape({
