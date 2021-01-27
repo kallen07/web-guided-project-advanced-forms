@@ -89,7 +89,10 @@ export default function App() {
           [name]: "",
         })
         .catch(err => {
-          
+          setFormErrors({
+            ...formErrors,
+            [name]: err.errors[0]
+          })
         })
       });
 
