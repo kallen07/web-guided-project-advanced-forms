@@ -11,8 +11,8 @@ export default yup.object().shape({
     .email("must be a valid email")
     .required("email is required"),
   role: yup
-  .string()
-  .oneOf(['tl', 'instructor', ]),
+    .string()
+    .oneOf(["tl", "instructor", "alumni", "student"], "role is required"),
   civil: yup.string(),
   // we are done with checkboxes
   hiking: yup.boolean(),
