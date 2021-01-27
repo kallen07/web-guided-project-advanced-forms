@@ -51,8 +51,10 @@ export default function App() {
     // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
     //    helper to [GET] all friends from `http://buddies.com/api/friends`
     axios
-    .get()
-    .then()
+    .get("http://buddies.com/api/friends")
+    .then((res) => {
+      
+    })
     .catch()
 
   }
