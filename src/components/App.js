@@ -87,13 +87,12 @@ export default function App() {
         setFormErrors({
           ...formErrors,
           [name]: "",
-        })
-        .catch(err => {
+        }).catch((err) => {
           setFormErrors({
             ...formErrors,
-            [name]: err.errors[0]
-          })
-        })
+            [name]: err.errors[0],
+          });
+        });
       });
 
     setFormValues({
