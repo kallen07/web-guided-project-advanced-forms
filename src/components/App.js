@@ -5,7 +5,9 @@ import FriendForm from './FriendForm'
 // 🔥 STEP 2- FLESH OUT FriendForm.js
 // 🔥 STEP 3- FLESH THE SCHEMA IN ITS OWN FILE
 // 🔥 STEP 4- IMPORT THE SCHEMA, AXIOS AND YUP
-
+import * as yup from 'yup'
+import schema from '../validation/formSchema'
+import axios from 'axios'
 
 //////////////// INITIAL STATES ////////////////
 //////////////// INITIAL STATES ////////////////
