@@ -81,7 +81,10 @@ export default function App() {
   const inputChange = (name, value) => {
     // 🔥 STEP 10- RUN VALIDATION WITH YUP
     yup
-    .reach
+    .reach(schema, name)
+    .validate(value)
+
+
     setFormValues({
       ...formValues,
       [name]: value, // NOT AN ARRAY
