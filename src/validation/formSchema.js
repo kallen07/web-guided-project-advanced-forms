@@ -2,17 +2,18 @@
 import * as yup from "yup";
 
 export default yup.object().shape({
-    username: yup
+  username: yup
     .string()
-    required('Username is required'),
-    email: yup.string(),
-    role: yup.string(),
-    civil: yup.string(),
-    // we are done with checkboxes
-    hiking: yup.boolean(),
-    reading: yup.boolean(),
-    coding: yup.boolean(),
-})
+    .required("Username is required")
+    .min(3, "Username must be 3 chars long"),
+  email: yup.string(),
+  role: yup.string(),
+  civil: yup.string(),
+  // we are done with checkboxes
+  hiking: yup.boolean(),
+  reading: yup.boolean(),
+  coding: yup.boolean(),
+});
 
 const formSchema = Yup.object().shape({
   email: Yup.string()
