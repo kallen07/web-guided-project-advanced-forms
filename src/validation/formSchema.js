@@ -1,5 +1,7 @@
 // Here goes the schema for the form
-import reach as yup from "yup";
+import * as yup from "yup";
+
+export default yu
 
 const formSchema = Yup.object().shape({
   email: Yup.string()
