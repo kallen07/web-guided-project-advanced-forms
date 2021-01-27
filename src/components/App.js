@@ -67,7 +67,7 @@ export default function App() {
     axios
       .post("http://buddies.com/api/friends", newFriend)
       .then((res) => {
-        setFriends([newFriend, ...friends]);
+        setFriends([res.data, ...friends]);
         setFormValues(initialFormValues);
       })
       .catch((err) => {
