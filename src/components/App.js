@@ -81,14 +81,17 @@ export default function App() {
   const inputChange = (name, value) => {
     // 🔥 STEP 10- RUN VALIDATION WITH YUP
     yup
-    .reach(schema, name)
-    .validate(value)
-    .then(() => {
-      setFormErrors({
-        ...formErrors
-      })
-    })
-
+      .reach(schema, name)
+      .validate(value)
+      .then(() => {
+        setFormErrors({
+          ...formErrors,
+          [name]: "",
+        })
+        .catch(err => {
+          
+        })
+      });
 
     setFormValues({
       ...formValues,
