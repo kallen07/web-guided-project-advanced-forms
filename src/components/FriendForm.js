@@ -30,10 +30,6 @@ export default function FriendForm(props) {
 
         <div className='errors'>
           {/* 🔥 RENDER THE VALIDATION ERRORS HERE */}
-          <div>{errors.username}</div>
-          <div>{errors.email}</div>
-          <div>{errors.role}</div>
-          <div>{errors.civil}</div>
         </div>
       </div>
 
@@ -81,13 +77,7 @@ export default function FriendForm(props) {
         {/* ////////// RADIO BUTTONS ////////// */}
         {/* ////////// RADIO BUTTONS ////////// */}
         {/* ////////// RADIO BUTTONS ////////// */}
-        <label>Single
 
-        </label>
-
-        <label>Married
-
-        </label>
       </div>
 
       <div className='form-group checkboxes'>
@@ -96,17 +86,6 @@ export default function FriendForm(props) {
         {/* ////////// CHECKBOXES ////////// */}
         {/* ////////// CHECKBOXES ////////// */}
         {/* ////////// CHECKBOXES ////////// */}
-        <label>Hiking
-
-        </label>
-
-        <label>Reading
-
-        </label>
-
-        <label>Coding
-
-        </label>
       </div>
     </form>
   )
